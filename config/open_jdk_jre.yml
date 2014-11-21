@@ -19,11 +19,9 @@
 repository_root: "{default.repository.root}/openjdk/{platform}/{architecture}"
 version: 1.8.0_+
 memory_sizes:
-  metaspace: 64m..
-  # permgen: 64m..
+  permgen: 256m..
 memory_heuristics:
-  heap: 75
-  metaspace: 10
-  # permgen: 10
+  heap: 65
+  permgen: 25
   stack: 5
-  native: 10
+  native: 5
